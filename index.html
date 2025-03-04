@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+        html{
+            scroll-behavior: smooth;
+            
+        }
+        .slider {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.button:hover {
+  background: #ff2e00;
+  transform: scale(1.1);
+}
+        video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+img{
+    border-radius: 15%;
+}
+h1{
+    font-family: big shoulders inline;
+    font-display: middle;
+    font-size: xx-large;
+    color: aliceblue ;
+    }
+    
+h2{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing:50%;
+  font: weight 600;
+  font-style:shadow;
+}
+h2{
+    text-align: center;
+    font-size:xx-large;
+}
+
+    p{
+        font-size:xx-large;
+        color: rgb(236, 164, 93);
+        font-family:Georgia, 'Times New Roman', Times, serif; }
+   h3{
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(251, 249, 248);
+   }
+  .own{
+    font-family: moon dance;
+  }
+
+header{
+  font-family: "Sigmar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.new{
+ text-align: center; 
+ color: #b67b7bc1; 
+ font-style: normal; 
+ font-weight: 200; 
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(108, 78, 22, 0.56);
+    color: rgba(69, 21, 21, 0.841);
+    font-size: 65%;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1);
+    background-color: darkorange;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wave {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .wave span {
+            display: inline-block;
+            animation: wave 1.5s infinite;
+            color: rgb(238, 186, 120);
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Apply delay for each letter */
+        .wave span:nth-child(1) { animation-delay: 0s; }
+        .wave span:nth-child(2) { animation-delay: 0.1s; }
+        .wave span:nth-child(3) { animation-delay: 0.2s; }
+        .wave span:nth-child(4) { animation-delay: 0.3s; }
+        .wave span:nth-child(5) { animation-delay: 0.4s; }
+        .wave span:nth-child(6) { animation-delay: 0.5s; }
+        .text {
+  font-size: 1rem;
+  font-weight: lighter;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(156, 135, 135);
+  animation: typing 0.5s steps(10, end) forwards, blink 0.2s infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.write{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+  
+   </style>
+   
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sigmar&display=swap" rel="stylesheet">
+    <video autoplay muted loop playsinline>
+        <source src="./rajasthan.mov" type="video/mp4">
+        
+      </video>
+    <title>
+        creativity
+    </title>
+    <body>
+       
+       
+            <a  href="./1739045653020-3.jpg" style="color: antiquewhite;" class="logo">
+               <img  alt="DEREK" class="logo">
+            </a>
+           
+             <h5 class="new">
+                <a href="#amer_fort" style="color: antiquewhite; position: initial;">AMER_FORT</a>&nbsp;&nbsp; 
+                <a href="#nahar_garh" style="color: antiquewhite; margin: 1%">&nbsp;&nbsp;NAHAR_GARH</a>&nbsp;
+                <a href="#jai_garh" style="color: antiquewhite;">&nbsp;&nbsp;JAI_GARH</a>&nbsp;
+                <a href="#moti_dungri" style="color: antiquewhite;">&nbsp;&nbsp;MOTI_DUNGRI_FORT</a>&nbsp;
+                <a href="#city" style="color: antiquewhite;">&nbsp;&nbsp;CITY_PALACE</a>&nbsp;
+                <a href="#hawa"style="color: antiquewhite;">&nbsp;&nbsp;HAWA_MAHAL</a>
+            </h5>
+      
+        
+        <p><h2 style="margin: 1%; color: #b67b7bc1;">
+         🔱RAJASTHAN🔱
+       </h2> 
+    <h4 style="color: bisque; margin: 1%;" class="text"><center><pre>              🤎Love jaipur</center></pre></h4>
+    <h4 style="color: #e1cba3c1; margin: 1%;" class="text"><center>Where stones tells the history</center></h4>
+    <h4 style="color: bisque; margin: 1%;"  class="text"><center>Explore the land of maharas</center></h4><h1 id="up"><center>.</center></h1>
+    </p><pre><h1>
+India’s largest state by area,                     <img src="./elephnt.jpeg" alt=""width="80"height="auto">
+vibrant culture, majestic palaces,
+and vast deserts.
+Located in the northwestern part of India,         <img src="./jaipurstikcker.jpg.jpeg" alt="jaipurstikcker"width="10%"height="auto">
+it shares its borders with
+Punjab, Haryana, Uttar Pradesh, 
+Madhya Pradesh,and Gujarat.
+It is also home to the Thar Desert, 
+one of the world’s most famous arid regions.
+</h1> </pre>
+      <p class="own">
+       lets cover out jaipur most important and most famous forts. and also we have to know about because it is madup by the blood of our ancestors..
+      </p> <br>
+      <h3 id="amer_fort">
+        <h1 class="wave">
+            <SPan>1.</SPan>
+            <span>A</span>
+            <span>M</span>
+            <span>E</span>
+            <span>R</span>
+            <span></span>
+            <span>F</span>
+            <span>O</span>
+            <span>R</span>
+            <span>T</span>
+            <SPan><img src="./amerfort2.jpeg" alt=".">&nbsp;<img src="./amerfort.jpeg" alt=""></SPan>
+            
+        </h1> 
+       <h3 class="write"> <pre>          
+•Built By: Raja Man Singh I (1592)
+•Famous For: Rajput & Mughal architecture, Sheesh Mahal (Mirror Palace)
+•Highlights: Elephant rides, light & sound show, stunning hilltop views.
+•UNESCO World Heritage Site (as part of the Hill Forts of Rajasthan).
+</h3></pre>
+    <hr>
+    <h3 id="nahar_garh"></h3>
+<h1 class="wave">
+    <SPan>2.</SPan>
+    <span>N</span>
+    <span>A</span>
+    <span>H</span>
+    <span>A</span>
+    <SPan>R</SPan>
+    <span></span>
+    <span>G</span>
+    <span>A</span>
+    <span>R</span>
+    <span>H</span>
+    <span></span>
+    <span>F</span>
+    <span>O</span>
+    <span>R</span>
+    <span>T</span>
+    <SPan><img src="./nahargarh.jpeg" alt=".">&nbsp;<img src="./nahargarh2.jpeg" alt="."></SPan>
+    
+</h1>  
+<pre><h3>•Built By: Maharaja Sawai Jai Singh II (1734)
+•Famous For: Scenic views of Jaipur, sunset points.
+•Highlights: Madhavendra Bhawan (royal residence),
+ wax museum, open-air restaurants. 
+</pre></h3><hr>
+<h3 id="jai_garh"></h3>
+<H1 class="wave">
+    <SPan>3.</SPan>
+    <span>J</span>
+    <span>A</span>
+    <span>I</span>
+    <span></span>
+    <span>G</span>
+    <SPan>A</SPan>
+    <span>R</span>
+    <span>H</span>
+    <span></span>
+    <span>F</span>
+    <span>O</span>
+    <span>R</span>
+    <span>T</span>
+    <SPan><img src="./ jaigarh2.jpeg" alt=".">&nbsp;<img src="./jaigarh.jpeg" alt=""></SPan>
+   </H1>
+    <H3><PRE>•Built By: Maharaja Sawai Jai Singh II (1726)
+•Famous For: World’s largest cannon on wheels – “Jaivana Cannon”
+•Highlights: Underground tunnels connecting to Amer Fort,
+ watchtowers with panoramic views.
+  </H3> </PRE>
+  <hr>
+  <h3 id="moti_dungri"></h3>
+  <h1 class="wave">
+    <SPan>4.</SPan>
+    <span>M</span>
+    <span>O</span>
+    <span>T</span>
+    <span>I</span>
+    <SPan></SPan>
+    <span>D</span>
+    <span>U</span>
+    <span>N</span>
+    <span>G</span>
+    <span>R</span>
+    <span>I</span>
+    <span></span>
+    <span>F</span>
+    <span>O</span>
+    <span>R</span>
+    <span>T</span>
+    <span><img src="./moti.jpeg." alt="">&nbsp;<img src="./moti2.jpeg" alt="."></span>
+  <pre><h3> 
+•Houses the Moti Dungri Ganesh Temple
+•Private property, but visible from outside
+•Resembles a Scottish castle
+</h3>
+  </pre>
+  <hr>
+  <H3 id="city"></H3>
+  <H1 class="wave">
+  <SPan>5.</SPan>
+  <span>C</span>
+  <span>I</span>
+  <span>T</span>
+  <span>Y</span>
+  <SPan></SPan>
+  <span>P</span>
+  <span>A</span>
+  <span>L</span>
+  <span>A</span>
+  <span>C</span>
+  <span>E</span>
+  <span><img src="./city.jpeg" alt=".">&nbsp;<img src="./city2.jpeg" alt="."></span>
+  </h1>
+  <h3><pre>
+City Palace, Jaipur –
+A Royal Marvel...
+The City Palace in Jaipur is one of 
+the most famous landmarks of Rajasthan,
+showcasing the grandeur of the Rajput and 
+Mughal architectural styles.
+It was the residence of the royal family of Jaipur 
+and still houses the descendants of the royal lineage. 
+</pre></h3>
+<hr>
+<H3 id="hawa"></H3>
+  <H1 class="wave">
+  <SPan>6.</SPan>
+  <span>H</span>
+  <span>A</span>
+  <span>W</span>
+  <span>A</span>
+  <SPan></SPan>
+  <span>M</span>
+  <span>A</span>
+  <span>H</span>
+  <span>A</span>
+  <span>L</span>
+  <span>C</span>
+  <span>E</span>
+<span><img src="./hawa2.jpeg" alt="."><img src="./Unknown-1.jpeg" alt="."></span>
+</h3>
+
+<pre><h3>
+Hawa Mahal is one of Jaipur’s most iconic landmarks,
+known for its unique honeycomb-shaped 
+facade with 953 small windows (jharokhas).
+It was built for the royal women to 
+observe street life and festivals without being seen,
+following the purdah </h3>
+</pre>
+
+
+</body>
+<h4 style="color: aliceblue;">
+    <pre>
+thnks for scrolling..
+<a href="https://www.instagram.com/p/DGduArsTsWJ/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="font-size="2cm"font-weight="bold">instagram</a>
+                                                                        <a href="#up"><center>Upwords</center></a>
+</pre>
+</h4>
+</head>
+
+
+
+</html>
